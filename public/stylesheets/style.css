@@ -3,7 +3,7 @@ body {
   padding: 0;
   margin: 0;
   font-family: "Roboto", "Lucida Grande", Helvetica, Arial, sans-serif;
-  background-color: #f4f4f9;
+  background: linear-gradient(to right, #f0f4c3, #a1c4fd);
   color: #333;
   line-height: 1.6;
 }
