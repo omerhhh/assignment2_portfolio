@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projects | Omer's Portfolio</title>
+    <title><%= title %> | Omer's Portfolio</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="/stylesheets/style.css">
@@ -24,30 +24,15 @@
         </div>
     </nav>
     <main class="container mt-4">
-        <h1>My Projects</h1>
-        <p>Here are some of the projects I’ve worked on:</p>
-        
-        <div class="project">
-            <img src="/images/guessinggame.png" alt="Guessing Game Project">
-            <div>
-                <h2>Guessing Game Project</h2>
-                <p>This project was also made entirely in Python for one of my courses. It generates a random integer between 1 and 100, and asks the user to guess it, providing hints until they guess correctly.</p>
-            </div>
-        </div>
-        
-        <div class="project">
-            <img src="/images/calculator.png" alt="Calculator Project">
-            <div>
-                <h2>Calculator Project</h2>
-                <p>A very simple calculator app I worked on when I first started learning Python in school. It is capable of doing all basic math operations.</p>
-            </div>
-        </div>
-        
+        <%- body %>
     </main>
     <footer class="bg-dark text-white text-center p-3 mt-5">
         <p>Connect with me on <a href="https://github.com/omerhhh" class="text-white">GitHub</a> | 
         <a href="https://www.linkedin.com/in/omer-hashmi-378fvv27/" class="text-white">LinkedIn</a></p>
         <p>&copy; 2024 Omer Hashmi</p>
     </footer>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>

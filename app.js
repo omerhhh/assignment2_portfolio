@@ -5,10 +5,9 @@ var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 
 var indexRouter = require('./routes/index');
-var usersRouter = require('./routes/users');
-var aboutRouter = require('./routes/about');       // Added about route
-var projectsRouter = require('./routes/projects'); // Added projects route
-var contactRouter = require('./routes/contact');   // Added contact route
+var aboutRouter = require('./routes/about');
+var projectsRouter = require('./routes/projects');
+var contactRouter = require('./routes/contact');
 
 var app = express();
 
@@ -21,7 +20,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 
-// Serve static files from the public directory
+// Serve static files
 app.use(express.static(path.join(__dirname, 'public'), {
     setHeaders: (res, filePath) => {
         if (filePath.endsWith('.mp4')) {
@@ -35,7 +34,6 @@ app.use('/videos', express.static(path.join(__dirname, 'public/videos')));
 
 // Define routes
 app.use('/', indexRouter);
-app.use('/users', usersRouter);
 app.use('/about', aboutRouter);
 app.use('/projects', projectsRouter);
 app.use('/contact', contactRouter);
