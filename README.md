@@ -14,7 +14,7 @@ The main files and folders:
 
 ### Resources Used
 
-- Baseline for CSS gradients: [https://baseline.is/tools/css-gra](https://baseline.is/tools/css-gra) 
+- Baseline for CSS gradients: [https://baseline.is/tools/css-gra](https://cssgradient.io/) 
 - Google Fonts for font styling: [https://fonts.google.com/](https://fonts.google.com/) 
 
 ### About
